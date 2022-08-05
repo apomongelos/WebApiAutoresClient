@@ -1,0 +1,52 @@
+<div class="container">
+  <form class="login-form" [formGroup]="createCourseForm" (ngSubmit)="submit()">
+    <h1 class="h3 mb-3 fw-normal">Agregar nuevo curso</h1>
+
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Nombre"
+        formControlName="name"
+      />
+      <label for="floatingInput">Nombre</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingDescription"
+        placeholder="Descripcion"
+        formControlName="description"
+      />
+      <label for="floatingDescription">Descripcion</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingbeginDate"
+        placeholder="Fecha de inicio"
+        formControlName="beginDate"
+      />
+      <label for="floatingDescription">Fecha de inicio</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingendDate"
+        placeholder="Fecha de fin"
+        formControlName="endDate"
+      />
+      <label for="floatingDescription">Fecha de fin</label>
+    </div>
+
+    <div class="buttons">
+      <button class="w-100 btn btn-lg btn-primary" type="submit">
+        Agregar curso
+      </button>      
+    </div>
+  </form>
+</div>

@@ -27,12 +27,28 @@
       <div class="card-body">
         <p class="card-text">{{ course.description }}</p>
         <div class="text-end">
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="margin: 5px"
+            routerLink="/courses/classes"
+            [queryParams]="{ courseId: course.id }"
+            >Ver lista de clases</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="margin: 5px"            
+            >Ver lista de alumnos</a
+          >
+        </div>
+        <div class="text-end">
           <a href="#" class="btn btn-danger" style="margin: 5px">Delete</a>
           <a
             href="#"
             class="btn btn-primary"
             style="margin: 5px"
-            routerLink="/pets/update"
+            routerLink="/courses/update"
             [queryParams]="{ courseId: course.id }"
             >Edit</a
           >

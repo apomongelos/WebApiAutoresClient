@@ -11,8 +11,24 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CreateCourseComponent } from './components/courses/create-course/create-course.component';
+import { UpdateCourseComponent } from './components/courses/update-course/update-course.component';
+import { ClassesComponent } from './components/classes/classes.component';
+import { CreateClassComponent } from './components/classes/create-class/create-class.component';
+import { UdpateClassComponent } from './components/classes/udpate-class/udpate-class.component';
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, CoursesComponent, NavbarComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    CoursesComponent,
+    NavbarComponent,
+    CreateCourseComponent,
+    UpdateCourseComponent,
+    ClassesComponent,
+    CreateClassComponent,
+    UdpateClassComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,7 +36,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    BsDropdownModule
+    BsDropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
